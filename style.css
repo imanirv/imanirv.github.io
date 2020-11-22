@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-shape {
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 1000px;
+  z-index: 0;
+}
+.bg-shape-2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.container-2 {
+  height: 100%;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+.container-3 {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.content-3 {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: palevioletred; */
+  padding: 50px;
+}
+
+.content-2 {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  height: 100%;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 4em;
+  font-weight: 900;
+  z-index: 1;
+}
+.title-2 {
+  font-size: 3em;
+  font-weight: 800;
+  z-index: 1;
+}
+.title-3 {
+  font-size: 2.5em;
+  font-weight: 800;
+  z-index: 1;
+}
+.hello {
+  font-size: 2em;
+  font-weight: 400;
+  z-index: 1;
+}
+.subtitle-1 {
+  font-size: 2em;
+  font-weight: 800;
+  z-index: 1;
+}
+.subtitle-2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: 400;
+  z-index: 1;
+  text-align: center;
+}
+
+.img-page-1 {
+  width: 750px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.img-page-2 {
+  width: 479px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
+.img-page-3 {
+  width: 1200px;
+  position: absolute;
+  bottom: 0%;
+  z-index: 1;
+}
+
+.project-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-media .icons {
+  margin-right: 30px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+
+.box {
+  width: 250px;
+  margin: 5px;
+  z-index: 2;
+  position: relative;
+}
+
+.img-project {
+  width: 100%;
+}
+
+.img-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-overlay:hover {
+  opacity: 0.7;
+}
+
+.img-overlay p {
+  font-size: 2em;
+}
+
+.img-overlay .btn {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 360px;
+  font-size: 12px;
+  transition: 0.5s ease-in-out;
+}
+
+.img-overlay .btn:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-top: 100px;
+  font-weight: 800;
+  text-align: center;
+  animation: manthul ease-in-out 2s infinite;
+}
+
+@keyframes manthul {
+  0% {
+    bottom: 5%;
+  }
+  50% {
+    bottom: 10%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+/* w3s navbar*/
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  left: 0;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+li.icon {
+  font-weight: 800;
+}
+.navbar li {
+  float: left;
+}
+.navbar li.right {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+
+.navbar li a:hover {
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.49);
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills > .skillbox {
+  width: 150px;
+  height: 100px;
+  /* background-color: white; */
+  margin: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+}
+
+.skill-icon {
+  height: 100%;
+}
